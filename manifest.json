@@ -1,0 +1,67 @@
+{
+	"manifest_version": 2,
+	"name": "JLUindex",
+	"version": "0.1.0",
+	"description": "展示JLUindex",
+	"default_locale": "zh_CN",
+	"?icons":"// 设置扩展程序的默认语言为简体中文。",
+	"icons": {
+		"16": "lib/logo/16.png",
+		"48": "lib/logo/48.png",
+		"128": "lib/logo/128.png"
+	},
+	"?browser_action": "// 指定浏览器操作按钮的行为。",
+	"browser_action": {
+		"default_icon": {
+			"16": "lib/logo/16.png",
+			"32": "lib/logo/32.png",
+			"48": "lib/logo/48.png"
+		},
+		"?default_popup":"// 指定在弹出窗口中显示的 HTML 文件。",
+		"default_popup":"popup/popup.html"
+	},
+	"?permissions": "// 授予扩展程序使用 chrome.storage API 的权限。",
+	"permissions": [ "storage" ],
+	"?background" : "// 定义扩展程序的后台页面。",
+	"background" : {
+		"page" : "background.html"
+	},
+
+    "?content_scripts": "// 定义将注入到网页中的内容脚本。",
+    "content_scripts": [
+        {
+            "?matches": "// 内容脚本将被注入的 URL。",
+            "matches": [
+				"https://*/*",
+				"http://*/*"
+            ],
+            "?js": "// 要注入的 JavaScript 文件。",
+            "?lib/js/jquery-3.3.1.min.js": "// jQuery 库。// ranking/utils.js是用于显示排名的实用脚本 // site/siteUtil.js用于与特定网站交互的实用脚本// data/ccf-index.js排名名称和缩写的数据文件// show_ranking/script.js是显示排名的主脚本。//popup/js/jquery-3.3.1.min.js和jquery-labelauty.js弹出窗口功能的 jQuery 脚本",
+            "js": [
+                "lib/js/jquery-3.3.1.min.js",
+				
+                "show_ranking/ranking/jlu.js",
+                "show_ranking/ranking/utils.js",
+                		
+							
+
+                "show_ranking/site/zhiwang.js",
+
+				
+                "show_ranking/data/jluRankingName.js",
+               
+				
+                "show_ranking/script.js",
+
+				"popup/js/jquery-3.3.1.min.js",
+				"popup/js/jquery-labelauty.js"
+
+            ],
+            "?css": "// 用于排名显示的样式表文件",
+            "css": [
+                "show_ranking/style.css"
+
+            ]
+        }
+    ]
+}
