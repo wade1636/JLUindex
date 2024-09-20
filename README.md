@@ -1,6 +1,6 @@
 # 简介
 
-本插件正式名称为**JLUindex**，是基于 [ShutterZor/ranking-kit](https://github.com/ShutterZor/ranking-kit) 二次开发的项目，[ShutterZor/ranking-kit](https://github.com/ShutterZor/ranking-kit是基于) [museremarkable/swufe_ccf_show_ranking](https://github.com/museremarkable/swufe_ccf_show_ranking) 二次开发的项目。
+本插件正式名称为**JLUindex**，是基于 [ShutterZor/ranking-kit](https://github.com/ShutterZor/ranking-kit) 二次开发的项目，[ShutterZor/ranking-kit](https://github.com/ShutterZor/ranking-kit)是基于 [museremarkable/swufe_ccf_show_ranking](https://github.com/museremarkable/swufe_ccf_show_ranking) 二次开发的项目。
 
 **JLUindex**项目仅做部分修改以适配吉林大学社会科学中文期刊目录。
 为了不影响easyScholar的正常盈利，本插件对功能进行了部分限制，只适用于知网显示吉林大学社会科学中文期刊目录。
